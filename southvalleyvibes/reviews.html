@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Salt Lake Valley Vibes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav" aria-label="Main navigation">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-short">SLEATS</span>
+                </a>
+            </div>
+            <div class="nav-links desktop-nav">
+                <a href="index.html#drinks">Drinks</a>
+                <a href="index.html#dining">Dining</a>
+                <a href="index.html#about">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reviews-header-section">
+            <h2>Latest Reviews</h2>
+            <div class="reviews-filters">
+                <select id="review-sort">
+                    <option value="recent">Most Recent</option>
+                    <option value="highest">Highest Rating</option>
+                    <option value="lowest">Lowest Rating</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <div class="recent-reviews review-grid">
+                <!-- Dynamically populated with review cards -->
+            </div>
+            <button id="load-more-reviews" class="load-more">Load More Reviews</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your trusted guide to the best dining experiences in the Salt Lake Valley.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="/">Featured Restaurants</a></li>
+                    <li><a href="/reviews.html">Latest Reviews</a></li>
+                    <li><a href="/submit-review.html">Write a Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p>Email: info@slvalleyvibes.com</p>
+                <p>Follow us on social media</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Salt Lake Valley Vibes</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/reviews.js"></script>
+</body>
+</html> 
