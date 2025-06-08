@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the best local drinks, dining, and outdoor adventures in Salt Lake Valley">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Salt Lake Eats - Local Food & Drink Guide</title>
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.min.css" as="style">
+    <link rel="preload" href="js/main.min.js" as="script">
+    <link rel="preload" href="js/cursor.min.js" as="script">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <a href="#section1">
+                <span class="logo-short">SLEATS</span>
+            </a>
+        </div>
+        <div class="nav-links desktop-nav">
+            <a href="#drinks">Drinks</a>
+            <a href="#dining">Dining</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section" id="section1">
+            <div class="hero-container">
+                <div class="content-wrapper">
+                    <h1 class="main-title">Discover the Best<br>of Salt Lake Valley</h1>
+                    <p class="subtitle">Seasonally curated local experiences in drinks & dining</p>
+                    <div class="mobile-nav">
+                        <a href="#drinks">Drinks</a>
+                        <a href="#dining">Dining</a>
+                        <a href="#about">About</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/featured/FoodSample.jpg" alt="Featured Salt Lake Valley Dining" width="600" height="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- Drinks Section -->
+        <section class="section" id="drinks">
+            <h2 class="section-title">Drinks & Spirits</h2>
+            <div class="category-grid">
+                <a href="craft-brews.html" class="category-item">
+                    <img src="images/drinks/CraftBrewsSample.jpg" alt="Local Craft Beers" loading="lazy" width="400" height="300">
+                    <div class="overlay">
+                        <h3>Craft Beers</h3>
+                        <p>Discover local breweries and unique craft beers</p>
+                    </div>
+                </a>
+                <a href="wine.html" class="category-item">
+                    <img src="images/drinks/WineSample.jpg" alt="Local Wines" loading="lazy" width="400" height="300">
+                    <div class="overlay">
+                        <h3>Wines</h3>
+                        <p>Explore local wineries and wine tasting rooms</p>
+                    </div>
+                </a>
+                <a href="spirits.html" class="category-item">
+                    <img src="images/drinks/SpiritsSample.jpg" alt="Local Spirits" loading="lazy" width="400" height="300">
+                    <div class="overlay">
+                        <h3>Spirits</h3>
+                        <p>Experience craft distilleries and cocktail bars</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Dining Section -->
+        <section class="section" id="dining">
+            <h2 class="section-title">Dining</h2>
+            <div class="category-grid">
+                <a href="fine-dining.html" class="category-item">
+                    <img src="images/dining/FineDiningSample.jpg" alt="Fine Dining" loading="lazy" width="400" height="300">
+                    <div class="overlay">
+                        <h3>Fine Dining</h3>
+                        <p>Exquisite restaurants and culinary experiences</p>
+                    </div>
+                </a>
+                <a href="casual-eats.html" class="category-item">
+                    <img src="images/dining/CasualSample.jpg" alt="Casual Dining" loading="lazy" width="400" height="300">
+                    <div class="overlay">
+                        <h3>Casual Eats</h3>
+                        <p>Relaxed atmosphere with quality local cuisine</p>
+                    </div>
+                </a>
+                <a href="food-trucks.html" class="category-item">
+                    <img src="images/dining/Foodtrucksample.jpg" alt="Food Trucks" loading="lazy" width="400" height="300">
+                    <div class="overlay">
+                        <h3>Food Trucks</h3>
+                        <p>Discover the best mobile eateries in the valley</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    We create seasonally curated experiences that connect Salt Lake Valley locals and visitors to the best of our region’s vibrant food and drink scene. From craft brews and small-batch spirits to local wines and farm-to-table dining—whether fine, casual, or food truck fare—we highlight the people and flavors that make Utah unique. Through pop-ups, tastings, and culinary adventures, we celebrate the community behind every bite and sip.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Navigation Arrows -->
+    <button class="nav-arrow prev" aria-label="Previous section">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 5l-7 7 7 7" fill="none"/>
+        </svg>
+    </button>
+    <button class="nav-arrow next" aria-label="Next section">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 5l7 7-7 7" fill="none"/>
+        </svg>
+    </button>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" stroke="currentColor" stroke-width="2" d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <!-- Deferred JavaScript -->
+    <script>
+        // Add js-loaded class once the page is ready
+        document.documentElement.classList.add('js-loaded');
+    </script>
+    <script src="js/main.min.js" defer></script>
+    <script src="js/cursor.min.js" defer></script>
+</body>
+</html> 
