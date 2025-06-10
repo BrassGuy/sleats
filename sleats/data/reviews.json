@@ -1,0 +1,43 @@
+{
+    "reviews": [
+        {
+            "id": 1,
+            "restaurantId": 1,
+            "rating": 5,
+            "reviewText": "Amazing street tacos! The outdoor patio is perfect for summer evenings. Service was top-notch and prices are reasonable.",
+            "reviewer": "Sarah J.",
+            "city": "South Jordan",
+            "date": "2024-03-15",
+            "verified": true,
+            "helpful": 12,
+            "photos": ["taco1.jpg", "patio1.jpg"],
+            "disputed": false
+        },
+        {
+            "id": 2,
+            "restaurantId": 2,
+            "rating": 4,
+            "reviewText": "Great sushi selection and ambiance. Happy hour deals are fantastic. Slightly pricey for regular dining but worth it for special occasions.",
+            "reviewer": "Mike R.",
+            "city": "Sandy",
+            "date": "2024-03-10",
+            "verified": true,
+            "helpful": 8,
+            "photos": ["sushi1.jpg"],
+            "disputed": false
+        },
+        {
+            "id": 3,
+            "restaurantId": 3,
+            "rating": 5,
+            "reviewText": "Best Neapolitan pizza in Utah! The wood-fired oven makes all the difference. Perfect for family dinners.",
+            "reviewer": "Lisa M.",
+            "city": "Draper",
+            "date": "2024-03-12",
+            "verified": true,
+            "helpful": 15,
+            "photos": ["pizza1.jpg", "interior1.jpg"],
+            "disputed": false
+        }
+    ]
+} 
