@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Details - Salt Lake Eats</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="main-nav" aria-label="Main navigation">
+        <div class="nav-logo">
+            <a href="index.html">
+                <span class="logo-short">SLEATS</span>
+            </a>
+        </div>
+        <div class="nav-links desktop-nav">
+            <a href="index.html#drinks">Drinks</a>
+            <a href="index.html#dining">Dining</a>
+            <a href="index.html#blog">Blog</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+    <main class="restaurant-details">
+        <div id="restaurant-header">
+            <!-- Dynamically populated -->
+        </div>
+
+        <div class="restaurant-content">
+            <div class="restaurant-info">
+                <div class="info-section">
+                    <h3>Hours</h3>
+                    <div id="hours-list">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>Contact</h3>
+                    <div id="contact-info">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>Location</h3>
+                    <div id="map-container">
+                        <!-- Google Maps embed will be inserted here -->
+                    </div>
+                    <a id="directions-link" target="_blank" rel="noopener noreferrer">Get Directions</a>
+                </div>
+
+                <div class="info-section">
+                    <h3>Amenities</h3>
+                    <ul id="amenities-list">
+                        <!-- Dynamically populated -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="reviews-section">
+                <div class="reviews-header">
+                    <h2>Reviews</h2>
+                    <div class="sort-options">
+                        <select id="review-sort">
+                            <option value="recent">Most Recent</option>
+                            <option value="highest">Highest Rating</option>
+                            <option value="lowest">Lowest Rating</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="reviews-container">
+                    <!-- Dynamically populated -->
+                </div>
+
+                <button id="load-more-reviews" class="load-more">Load More Reviews</button>
+            </div>
+        </div>
+
+        <section id="submit-review" class="submit-review-section">
+            <h2>Write a Review</h2>
+            <form id="submitReviewForm" class="review-form">
+                <input type="hidden" id="restaurantId" name="restaurantId">
+                
+                <div class="form-group">
+                    <label for="reviewerName">Your Name (optional)</label>
+                    <input type="text" id="reviewerName" name="reviewerName">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email (for moderation updates, will not be public)</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">Your City</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Overall Rating</label>
+                    <div class="star-rating">
+                        <input type="range" id="rating" name="rating" min="1" max="5" step="1" value="5" required>
+                        <div class="rating-display"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="reviewText">Your Review</label>
+                    <textarea id="reviewText" name="reviewText" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="photos">Add Photos (optional)</label>
+                    <input type="file" id="photos" name="photos" accept="image/*" multiple>
+                </div>
+
+                <div class="form-group">
+                    <label for="antiSpam">What's 2 + 3? (Anti-spam check)</label>
+                    <input type="number" id="antiSpam" name="antiSpam" required>
+                </div>
+
+                <div id="submitStatus" class="submit-status"></div>
+
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
+
+            <div class="review-disclaimer">
+                <p>By submitting a review, you agree to our review guidelines:</p>
+                <ul>
+                    <li>Reviews should be based on personal experience</li>
+                    <li>Keep content family-friendly and respectful</li>
+                    <li>No promotional content or spam</li>
+                    <li>Reviews may be moderated before appearing on the site</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Salt Lake Valley Vibes</h3>
+                <p>Your trusted source for honest restaurant reviews in the Salt Lake Valley area.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/#featured">Featured Restaurants</a></li>
+                    <li><a href="/#top-rated">Top Rated</a></li>
+                    <li><a href="#submit-review">Submit a Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@slvalleyvibes.com</p>
+                <p>Follow us on social media</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Salt Lake Valley Vibes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/restaurant.js"></script>
+</body>
+</html> 
